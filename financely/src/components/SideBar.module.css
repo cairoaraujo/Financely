@@ -1,6 +1,6 @@
 .SideBar{
     height: 100%;
-    width: 170px;
+    width: 10rem;
     background-color: #0D47A0;
     display: flex;
     flex-direction: column;
@@ -15,14 +15,14 @@
 }
 
 .mainLogo{
-    width: 220px;
+    width: 13.8rem;
 }
 
 .menu{
     list-style: none;
     text-align: center;
     padding: 0;
-    margin: 30px;
+    margin: 2rem;
 }
 .menu a{
     color:white;

@@ -1,7 +1,7 @@
 .cardImg{
-    width: 80px;
+    width: 3.2rem;
     display: inline;
-    padding:0px 10px 0px 0px;
+    padding:0px 0px 0px 0px;
     border-radius: 10px;
 }
 
@@ -18,13 +18,35 @@ h3{
     align-items: center;
     justify-content: space-between;
     background-color: rgb(244, 244, 244);
-    padding:10px;
-    border: 1px black solid;
-    border-radius: 15px;
+    padding: 0px 10px 0px 10px;
+    border: 1px rgb(206, 206, 206) solid;
+    border-radius: 10px;
     margin: 10px 0 10px 0px;
 }
 
 .bill{
+    width: 9.4rem;
     color: rgb(135, 19, 19);
-    font-size: 25px;
+    font-size: 20px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.cardName{
+    width: 11.25rem;
+}
+
+.cardActions{
+    width: 4.4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardActions children{
+    width: 62.5rem;
+}
+.actionIcon svg path{
+    height: 15px;
+    color: aqua;
+    stroke: red!important;
 }

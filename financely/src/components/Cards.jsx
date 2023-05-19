@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from "react";
 import styles from './Cards.module.css'
-import {GrAddCircle} from 'react-icons/gr'
+import {GrAddCircle, GrEdit, GrTrash} from 'react-icons/gr'
 
 const Cards = () => {
 
@@ -44,10 +44,24 @@ const Cards = () => {
             return(
                 <>  
                     <span className={styles.cardIdentity}>
-                        <img className={styles.cardImg} src={card.cardLogo}></img>
-                        <h4>{card.name}, de final {card.cardNumber}</h4>
+                        <div>
+                            <img className={styles.cardImg} src={card.cardLogo}></img>
+
+                        </div>
+                        <div className={styles.cardName}>
+                            <h5>{card.name}, de final {card.cardNumber}</h5>
+
+                        </div>
+                        <div>
                         <p className={styles.bill}>R$ {getBillsFromCard(card)}</p>
-                        <GrAddCircle></GrAddCircle>
+
+                        </div>
+                        <div className={styles.cardActions}>
+                        <GrAddCircle className={styles.actionIcon}></GrAddCircle>
+                        <GrEdit className={styles.actionIcon}></GrEdit>
+                        <GrTrash className={styles.actionIcon}></GrTrash>
+
+                        </div>
                     </span>
                 </>
     
