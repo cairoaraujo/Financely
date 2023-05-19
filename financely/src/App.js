@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
-
+import SideBar from './components/SideBar'
+import Dashboard from './components/Dashboard'
+import InfoBox from './components/infoBox';
+import TesteProps from './components/testeProps'
+import Tarefa from './components/tarefa'
+import './index.css'
+import styles from './App.module.css'
 function App() {
+
+  const userId = 1 //sets userId
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <>
+        <div className={styles.Wrapper}>
+          <SideBar></SideBar>
+          <main>
+            <h3>How r u doing, Cairo?</h3>
+            <Dashboard></Dashboard>
+          </main>
+        </div>
+      </>
+
   );
 }
 
