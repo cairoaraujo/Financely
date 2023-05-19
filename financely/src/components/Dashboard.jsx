@@ -2,6 +2,7 @@ import SideBar from "./SideBar";
 import InfoBox from "./infoBox";
 import styles from './Dashboard.module.css'
 import Cards from './Cards'
+import Resume from './Cards'
 
 const Dashboard = () =>{
     return <div className={styles.dashboard}>

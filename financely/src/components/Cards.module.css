@@ -1,0 +1,30 @@
+.cardImg{
+    width: 80px;
+    display: inline;
+    padding:0px 10px 0px 0px;
+    border-radius: 10px;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+h3{
+    display: inline;
+}
+.cardIdentity{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(244, 244, 244);
+    padding:10px;
+    border: 1px black solid;
+    border-radius: 15px;
+    margin: 10px 0 10px 0px;
+}
+
+.bill{
+    color: rgb(135, 19, 19);
+    font-size: 25px;
+}

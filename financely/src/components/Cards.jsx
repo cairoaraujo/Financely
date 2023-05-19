@@ -1,6 +1,7 @@
 
 import { useState, useEffect } from "react";
-import styles from 'react'
+import styles from './Cards.module.css'
+import {GrAddCircle} from 'react-icons/gr'
 
 const Cards = () => {
 
@@ -38,14 +39,16 @@ const Cards = () => {
     
     console.log(cards)
     
-    return <div className={styles.infobox}>   
+    return <div className={styles.cards}>   
         {cards.map(card =>{
             return(
-                <>
-                    <h3> Cartão {card.name}</h3>
-                    <p>Finalizado em {card.number}</p>
-                    <img className={styles.cardImg} src={card.cardLogo}></img>
-                    <p>fatura mensal: R$ {getBillsFromCard(card)}</p>
+                <>  
+                    <span className={styles.cardIdentity}>
+                        <img className={styles.cardImg} src={card.cardLogo}></img>
+                        <h4>{card.name}, de final {card.cardNumber}</h4>
+                        <p className={styles.bill}>R$ {getBillsFromCard(card)}</p>
+                        <GrAddCircle></GrAddCircle>
+                    </span>
                 </>
     
             )

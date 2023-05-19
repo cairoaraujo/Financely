@@ -1,10 +1,8 @@
 import SideBar from './components/SideBar'
 import Dashboard from './components/Dashboard'
-import InfoBox from './components/infoBox';
-import TesteProps from './components/testeProps'
-import Tarefa from './components/tarefa'
 import './index.css'
 import styles from './App.module.css'
+import Resume from './components/Resume'
 function App() {
 
   const userId = 1 //sets userId
@@ -14,7 +12,7 @@ function App() {
         <div className={styles.Wrapper}>
           <SideBar></SideBar>
           <main>
-            <h3>How r u doing, Cairo?</h3>
+            <Resume></Resume>
             <Dashboard></Dashboard>
           </main>
         </div>
